@@ -23,25 +23,12 @@ ActionListener ac1=new ActionListener()
 {
 public void actionPerformed(ActionEvent ev)
 {
-if(dialog==null)
-	dialog=new FindDialog(FindReplaceDemo.this.ta);
-dialog.showDialog(FindReplaceDemo.this,true);//find
 
-}
-};
 findButton.addActionListener(ac1);
 
 replaceButton=new JButton("Replace text");
 
-ActionListener ac2=new ActionListener()
-{
-public void actionPerformed(ActionEvent ev)
-{
-if(dialog==null)
-	dialog=new FindDialog(FindReplaceDemo.this.ta);
-dialog.showDialog(FindReplaceDemo.this,false);//find
-}
-};
+ActionListener ac2=new ActionListener();
 replaceButton.addActionListener(ac2);
 
 add(ta,BorderLayout.CENTER);
