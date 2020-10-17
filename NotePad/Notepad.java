@@ -70,6 +70,13 @@ if(!newFileFlag)
 return saveAsFile();
 }
 ////////////////////////////////////
+boolean saveAsFile()
+{
+File temp=null;
+chooser.setDialogTitle("Save As...");
+chooser.setApproveButtonText("Save Now"); 
+chooser.setApproveButtonMnemonic(KeyEvent.VK_S);
+chooser.setApproveButtonToolTipText("Click me to save!");
 
 do
 {
@@ -180,7 +187,7 @@ if(!saved)
 int x=JOptionPane.showConfirmDialog(this.npd.f,strMsg,applicationTitle,JOptionPane.YES_NO_CANCEL_OPTION);
 
 if(x==JOptionPane.CANCEL_OPTION) return false;
-if(x==JOptionPane.YES_OPTION ) return false;
+if(x==JOptionPane.YES_OPTION && !saveAsFile()) return false;
 }
 return true;
 }
@@ -315,7 +322,7 @@ else if(cmdText.equals(fileSave))
 	fileHandler.saveThisFile();
 ////////////////////////////////////
 else if(cmdText.equals(fileSaveAs))
-	fileHandler();
+	fileHandler.saveAsFile();
 ////////////////////////////////////
 else if(cmdText.equals(fileExit))
 	{if(fileHandler.confirmSave())System.exit(0);}
