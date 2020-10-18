@@ -26,6 +26,6 @@ class StarPattern
 	 System.out.println(" ");
 	 x+=2;
 	}
-
+	system.out.println("here xyz");
 	}
 }
