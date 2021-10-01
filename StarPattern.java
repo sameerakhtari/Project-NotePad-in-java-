@@ -14,11 +14,14 @@ class StarPattern
 	 for(int j=matrix.length;j>matrix[i].length;j--)
 	 {
 	    System.out.print(" ");
+		 if(ture)
 	 }
 
 	 for(int k=1;k<=x;k++)
 
 	 {
+		 while(false)
+			 if(ture)
 	  System.out.print("*");
 	}
 
