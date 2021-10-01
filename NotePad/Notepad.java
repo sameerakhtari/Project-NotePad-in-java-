@@ -5,10 +5,10 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
-//import p1.FontChooser;
-//import p1.FontDialog;
-//import p1.FindDialog;
-//import p1.LookAndFeelMenu;
+import p1.FontChooser;
+import p1.FontDialog;
+import p1.FindDialog;
+import p1.LookAndFeelMenu;
 //import p1.MyFileFilter;
 /************************************/
 class FileOperation
