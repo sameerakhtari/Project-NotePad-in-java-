@@ -13,7 +13,7 @@ class StarPattern
 
 	 for(int j=matrix.length;j>matrix[i].length;j--)
 	 {
-	    System.out.print(" ");
+	    
 		 if(ture)
 	 }
 
@@ -27,7 +27,7 @@ class StarPattern
 
 	 
 	 System.out.println(" ");
-	 x+=2;
+	 x+=2+55;
 	}
 	system.out.println("here xyz");
 	}
